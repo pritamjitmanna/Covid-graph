@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="covid.css">
+</head>
+
+<body>
+    <h1>Daily Cases/Deaths/Recoveries</h1>
+    <div id="graph">
+        <div id="Info">
+        </div>
+        <div class="option">
+                <select name="type" id="" onchange="type_change()">
+                    <option value="case" selected>New cases</option>
+                    <option value="recover">Recoveries</option>
+                    <option value="death">Deaths</option>
+                </select>
+        </div>
+        <div id="value">
+            <div id="valcase">
+                <div>5L</div>
+                <div>4L</div>
+                <div>3L</div>
+                <div>2L</div>
+                <div>1L</div>
+            </div>
+            <div id="valdeath">
+                <div>5K</div>
+                <div>4K</div>
+                <div>3K</div>
+                <div>2K</div>
+                <div>1K</div>
+            </div>
+            <div id="valrecover">
+                <div>5L</div>
+                <div>4L</div>
+                <div>3L</div>
+                <div>2L</div>
+                <div>1L</div>
+            </div>
+        </div>
+        <div id="line">
+            <div id="linecase">
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+            </div>
+            <div id="linedeath">
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+            </div>
+            <div id="linerecover">
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+                <hr>
+            </div>
+        </div>
+        <div id="bar">
+            <div id="case"></div>
+            <div id="death"></div>
+            <div id="recover"></div>
+        </div>
+
+    </div>
+</body>
+<script src="covid.js"></script>
+
+</html>
